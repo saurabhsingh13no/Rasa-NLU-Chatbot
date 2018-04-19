@@ -23,3 +23,4 @@ actions:
 	- utter_greet
 	- utter_goodbye
 	- utter_ask_location
+	- actions.source/ActionWeather
