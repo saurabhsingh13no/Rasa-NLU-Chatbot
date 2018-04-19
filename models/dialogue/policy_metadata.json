@@ -1,12 +1,10 @@
 {
-  "policy_names": [
-    "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.keras_policy.KerasPolicy"
-  ],
-  "rasa_core": "0.8.5",
-  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
-  "max_history": 2,
   "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "location"
+      ]
+    },
     "action_weather": {
       "slots": [
         "location"
@@ -17,13 +15,15 @@
         "location"
       ]
     },
-    "action_listen": {
-      "slots": [
-        "location"
-      ]
-    },
     "utter_goodbye": {
       "slots": []
     }
-  }
+  },
+  "rasa_core": "0.8.5",
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "max_history": 3,
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ]
 }
