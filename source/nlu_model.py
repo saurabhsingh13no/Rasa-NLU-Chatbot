@@ -16,8 +16,10 @@ def run_nlu():
                                    RasaNLUConfig("../config_spacy.json"))
 
     # test on user input
-    print (interpreter.parse(u"I am planning my holiday to Boston. I wonder "
-                             u"what is the weather out there."))
+    # print (interpreter.parse(u"I am planning my holiday to Boston . I wonder "
+    #                          u"what is the weather out there."))
+
+    print (interpreter.parse(u'what is the weather in Boston'))
 
 
 if __name__ == "__main__":

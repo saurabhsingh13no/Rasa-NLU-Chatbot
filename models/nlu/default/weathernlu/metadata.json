@@ -1,9 +1,10 @@
 {
+    "language": "en",
+    "trained_at": "20180418-224904",
     "regex_featurizer": null,
     "intent_classifier_sklearn": "intent_classifier.pkl",
-    "training_data": "training_data.json",
     "entity_extractor_crf": {
-        "model_file": "crf_model.pkl",
+        "BILOU_flag": true,
         "crf_features": [
             [
                 "low",
@@ -32,14 +33,10 @@
                 "pos2"
             ]
         ],
-        "BILOU_flag": true,
+        "model_file": "crf_model.pkl",
         "version": 1
     },
-    "rasa_nlu_version": "0.11.4",
     "entity_synonyms": null,
-    "spacy_model_name": "en",
-    "trained_at": "20180418-223644",
-    "language": "en",
     "pipeline": [
         "rasa_nlu.utils.spacy_utils.SpacyNLP",
         "rasa_nlu.tokenizers.spacy_tokenizer.SpacyTokenizer",
@@ -48,5 +45,8 @@
         "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor",
         "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper",
         "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier"
-    ]
+    ],
+    "training_data": "training_data.json",
+    "rasa_nlu_version": "0.11.4",
+    "spacy_model_name": "en"
 }

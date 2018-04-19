@@ -23,7 +23,7 @@
           }
         ]
       },
-	  {
+      {
         "text": "hey",
         "intent": "greet",
         "entities": []
@@ -232,6 +232,18 @@
           {
             "start": 25,
             "end": 31,
+            "value": "Boston",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "what is the weather outside in Boston",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 31,
+            "end": 37,
             "value": "Boston",
             "entity": "location"
           }
