@@ -1,26 +1,26 @@
 slots:
-	location:
-		type: text
+ location:
+  type: text
 
 intents:
-	- greet
-	- goodbye
-	- inform
+  - greet
+  - goodbye
+  - inform
 
 entities:
-	- location
+  - location
 
 templates:
-	utter_greet:
-		- 'Hello! how can I help?"
-	utter_goodbye:
-		- 'talk to you later.'
-		- 'Bye bye :)'
-	utter_ask_location:
-		- 'In what location?'
+ utter_greet:
+  - "Hello! how can I help?"
+ utter_goodbye:
+  - 'talk to you later.'
+  - 'Bye bye :)'
+ utter_ask_location:
+  - 'In what location?'
 
 actions:
-	- utter_greet
-	- utter_goodbye
-	- utter_ask_location
-	- actions.source/ActionWeather
+ - utter_greet
+ - utter_goodbye
+ - utter_ask_location
+ - source.actions.ActionWeather
