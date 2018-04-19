@@ -1,2 +1,3 @@
+python -m spacy download en
 sudo npm i -g rasa-nlu-trainer
 
